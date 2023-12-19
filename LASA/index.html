@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LASA: Instance Reconstruction from Real Scans using A Large-scale Aligned Shape Annotation Dataset</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+</head>
+
+<body>
+  <section>
+    <div class="jumbotron text-center mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>LASA <br> Instance Reconstruction from Real Scans using A Large-scale Aligned Shape Annotation Dataset
+            </h1>
+            <h4 style="color:#5a6268;"> Arxiv 2023 </h4>
+            <hr>
+            <h5>
+              <a href="https://github.com/UncleMEDM" target="_blank">Haolin Liu<sup>1,2*</sup></a>,
+              <a href="https://github.com/hugoycj/" target="_blank">Chongjie Ye<sup>1,2*</sup></a>,
+              <a href="https://yinyunie.github.io/" target="_blank">Yinyu Nie<sup>3</sup></a>,
+              <a href="https://github.com/Yingfan" target="_blank">Yingfan He<sup>1,2</sup></a>,
+              <a href="https://gaplab.cuhk.edu.cn/pages/people/" target="_blank">Xiaoguang
+                Han<sup>2,1&dagger;</sup><br></a>
+              <span style="color:#000000;">
+                <sup>1 </sup>FNii, CUHKSZ
+                <sup>2 </sup>SSE, CUHKSZ
+                <br>
+                <sup>3 </sup>Technical University of Munich
+              </span>
+            </h5>
+            <h5 style="color:#000000;"><sup>*</sup>Equally contributed <sup>&dagger;</sup>Corresponding Author</h5>
+          </div>
+        </div>
+        <br>
+        <p>
+          <a class="btn btn-secondary btn-lg" href="" role="button">Paper</a>
+          <a class="btn btn-secondary btn-lg" href="" role="button">Code (Comming Soon)</a>
+          <a class="btn btn-secondary btn-lg" href="" role="button">Dataset (Comming Soon)</a>
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Video</h2>
+          <hr style="margin-top:0px">
+          (<a href="https://www.bilibili.com/video/BV1Kb4y1V7JT">Chinese Mirror</a>)
+        </div>
+      </div>
+      <div class="row" style="margin-top:5px">
+        <iframe src="https://www.youtube.com/embed/9TDFq5FZxs0"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen title="Video"></iframe>
+      </div>
+    </div>
+  </section>
+  <br>
+
+
+  
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+            
+          </div>
+          <br>
+          <h2>Abstract</h2>
+          <hr style="margin-top:0px">
+          <div><img class="img-fluid" src="images/teaser.jpg" alt=""></div>
+          <br><br>
+          <p class="text-left">Instance shape reconstruction from a 3D scene involves recovering the full geometries of
+            multiple objects at the semantic instance level. Many methods leverage data-driven learning due to the
+            intricacies of scene complexity and significant indoor occlusions. Training these methods often requires a
+            large-scale, high-quality dataset with aligned and paired shape annotations with real-world scans. Existing
+            datasets are either synthetic or misaligned, restricting the performance of data-driven methods on real
+            data. To this end, we introduce LASA, a Large-scale Aligned Shape Annotation Dataset comprising 10,412
+            high-quality CAD annotations aligned with 920 real-world scene scans from ArkitScenes, created manually by
+            professional artists. On this top, we propose a novel Diffusion-based Cross-Modal Shape Reconstruction
+            (DisCo) method. It is empowered by a hybrid feature aggregation design to fuse multi-modal inputs and
+            recover high-fidelity object geometries. Besides, we present an Occupancy-Guided
+            3D Object Detection (OccGOD) method and demonstrate that our shape annotations provide scene occupancy clues
+            that can further improve 3D object detection. Supported by LASA, extensive experiments show that our methods
+            achieve state-of-the-art performance in both instance-level scene reconstruction and 3D object detection
+            tasks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Dataset</h2>
+          <hr style="margin-top:0px">
+          <p class="text-left">
+            LASA is a Large-scale Aligned Shape Annotation Dataset containing 10,412 unique object CAD models
+            aligned with 920 real-world scene scans.
+          </p>
+        </div>
+      </div>
+      
+      <div class="b-row">
+        <div class="col-6">
+        <figure style="text-align: center;">
+          <img src="videos/annotation/1_out.gif" width="100%" alt="GIF">
+        </figure>
+        </div>
+        <div class="col-6">
+        <figure style="text-align: center;">
+          <img src="videos/annotation/2_out.gif" width="100%" alt="GIF">
+        </figure>
+        </div>
+      </div>
+      <div class="b-row">
+        <div class="col-6">
+
+        <figure style="text-align: center;">
+          <img src="videos/annotation/3_out.gif" width="100%" alt="GIF">
+        </figure>
+        </div>
+        <div class="col-6">
+
+        <figure style="text-align: center;">
+          <img src="videos/annotation/4_out.gif" width="100%" alt="GIF">
+        </figure>
+        </div>
+      </div>
+      <div class="b-row">
+        <div class="col-6">
+        <figure style="text-align: center;">
+          <img src="videos/annotation/5_out.gif" width="100%" alt="GIF">
+        </figure>
+        </div>
+        <div class="col-6">
+        <figure style="text-align: center;">
+          <img src="videos/annotation/6_out.gif" width="100%" alt="GIF">
+        </figure>
+        </div>
+      </div>
+      <div class="b-row">
+        <div class="col-6">
+        <figure style="text-align: center;">
+          <img src="videos/annotation/7_out.gif" width="100%" alt="GIF">
+        </figure>
+        </div>
+        <div class="col-6">
+        <figure style="text-align: center;">
+          <img src="videos/annotation/8_out.gif" width="100%" alt="GIF">
+        </figure>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Aligned Annotations</h2>
+          <hr style="margin-top:0px">
+        </div>
+      </div>
+      <div class="col-12 text-center">
+        <img class="img-fluid" src="images/visualization_obj.png" alt="">
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Method</h2>
+          <hr style="margin-top:0px">
+          <p class="text-left">
+            Pipeline of our DisCo. Firstly, a triplane VAE model is trained to encode shape into triplane latent space
+            (top-left). Subsequently, a triplane diffusion model is trained in this latent space for conditional shape
+            reconstruction (top-right). A novel Hybrid Feature Aggregation Layer is proposed to effectively aggregate
+            and align local features in both partial points cloud and multi-view images (bottom).
+          </p>
+        </div>
+      </div>
+      <div class="row" style="margin-top:5px">
+        <div class="col-12 text-center">
+          <img class="img-fluid" src="images/Method.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Diffusion-based Reconstruction</h2>
+          <hr style="margin-top:0px">
+          <p class="text-left">Examples of DisCo’s instance-level scene reconstruction results. Both objects’ partial
+            point cloud and multi-view images are used as inputs to these results</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <figure style="text-align: center;">
+            <img src="videos/result/1_out.gif" width="100%" alt="GIF">
+          </figure>
+        </div>
+        <div class="col-6">
+          <figure style="text-align: center;">
+            <img src="videos/result/2_out.gif" width="100%" alt="GIF">
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <figure style="text-align: center;">
+            <img src="videos/result/3_out.gif" width="100%" alt="GIF">
+          </figure>
+        </div>
+        <div class="col-6">
+          <figure style="text-align: center;">
+            <img src="videos/result/4_out.gif" width="100%" alt="GIF">
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <figure style="text-align: center;">
+            <img src="videos/result/5_out.gif" width="100%" alt="GIF">
+          </figure>
+        </div>
+        <div class="col-6">
+          <figure style="text-align: center;">
+            <img src="videos/result/6_out.gif" width="100%" alt="GIF">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <footer class="text-center">
+    <div class="container">
+      <div class="row ">
+        <div class="col-12">
+          <h2>Citation</h2>
+          <hr style="margin-top:0px">
+          <div class="bibtexsection">
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+
+</html>
